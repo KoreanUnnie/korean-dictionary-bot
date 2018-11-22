@@ -8,7 +8,6 @@ const config = {
 };
 
 admin.initializeApp(config);
-
 const database = admin.database();
 
 exports.firebase = firebase;

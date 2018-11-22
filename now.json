@@ -1,31 +1,33 @@
 {
-    "version": 1,
-    "scale": {
-        "sfo1": {
-            "min": 1,
-            "max": 1
-        }
-    },
-    "env": {
-        "KOREAN_DICT_BOT_DISCORD_TOKEN": "@korean_dict_bot_discord_token",
-        "KOREAN_DICT_BOT_DISCORD_OWNER": "@korean_dict_bot_discord_owner",
-        "PORT": "80",
-        "FIREBASE_DATABASE_URL": "@kdf_database_url",
-        "NODE_ENV": "production",
-        "F_type": "@kdf_type",
-        "F_project_id": "@kdf_project_id",
-        "F_private_key_id": "@kdf_private_key_id",
-        "F_private_key": "@kdf_private_key",
-        "F_client_email": "@kdf_client_email",
-        "F_client_id": "@kdf_client_id",
-        "F_auth_uri": "@kdf_auth_uri",
-        "F_token_uri": "@kdf_token_uri",
-        "F_auth_provider_x509_cert_url": "@kdf_auth_provider_x509_cert_url",
-        "F_client_x509_cert_url": "@kdf_client_x509_cert_url",
-        "youtube_api_key": "@youtube-api-key",
-        "INITIAL_VOICE_CHANNEL": "@kd_initial_voice_channel",
-        "YOUTUBE_DISCORD_CHANNEL": "461385555842826240",
-        "LIVE_STREAM_SERVER":"@live-stream-server"
-    },
-    "alias": "korean-dict-bot.dongdongchat.com"
+  "version": 1,
+  "scale": {
+    "sfo1": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  "env": {
+    "KOREAN_DICT_BOT_DISCORD_TOKEN": "@korean_dict_bot_discord_token",
+    "KOREAN_DICT_BOT_DISCORD_OWNER": "@korean_dict_bot_discord_owner",
+    "PORT": "80",
+    "FIREBASE_DATABASE_URL": "@kdf_database_url",
+    "NODE_ENV": "production",
+    "F_type": "@kdf_type",
+    "F_project_id": "@kdf_project_id",
+    "F_private_key_id": "@kdf_private_key_id",
+    "F_private_key": "@kdf_private_key",
+    "F_client_email": "@kdf_client_email",
+    "F_client_id": "@kdf_client_id",
+    "F_auth_uri": "@kdf_auth_uri",
+    "F_token_uri": "@kdf_token_uri",
+    "F_auth_provider_x509_cert_url": "@kdf_auth_provider_x509_cert_url",
+    "F_client_x509_cert_url": "@kdf_client_x509_cert_url",
+    "youtube_api_key": "@youtube-api-key",
+    "INITIAL_VOICE_CHANNEL": "@kd_initial_voice_channel",
+    "YOUTUBE_DISCORD_CHANNEL": "461385555842826240",
+    "LIVE_STREAM_SERVER": "@live-stream-server",
+    "NAVER_CLIENT_ID": "@naver-client-id",
+    "NAVER_CLIENT_SECRET": "@naver-client-secret"
+  },
+  "alias": "korean-dict-bot.dongdongchat.com"
 }

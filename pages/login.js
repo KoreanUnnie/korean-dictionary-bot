@@ -5,7 +5,7 @@ import {
   ERROR_ADD_PLAYLIST_ITEM,
   UPDATE_PLAYLIST,
   SEND_USER_PLAYLIST
-} from "../webhooks/constants";
+} from "../socket.io/constants";
 
 class Index extends Component {
   state = {
@@ -67,14 +67,14 @@ class Index extends Component {
     this.props.socket.off(ERROR_ADD_PLAYLIST_ITEM, console.log("disconnected"));
   }
 
-    render() {
-        const currentVideo = this.state.playlist[this.state.playlist.length - 1];
+  render() {
+    const currentVideo = this.state.playlist[this.state.playlist.length - 1];
     return (
       <main>
-            <style>{``}</style>
-            <div>
-                <div>{currentVideo.title}</div>
-            </div>
+        <style>{``}</style>
+        <div>
+          <div>{currentVideo.title}</div>
+        </div>
         <b>in Queue:</b>
         {this.state.playlist.map((video, index) => (
           <div key={index}>

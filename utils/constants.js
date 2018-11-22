@@ -2,67 +2,12 @@ const moment = require("moment");
 const format = require("./format-text");
 const Discord = require("discord.js");
 
-const prefixes = {
-  "!define": {
-    match: "define", // used to match type, useful if we have multiple for same function
-    value: "!define ", // what the user typed
-    lang: "en" // maybe use to respond in another language
-  },
-  "!정의": {
-    match: "define",
-    value: "!정의 ",
-    lang: "ko"
-  },
-  "!klp": {
-    match: "KLP",
-    value: "!klp ",
-    lang: "en"
-  },
-  "!admin": {
-    match: "admin",
-    value: "!admin ",
-    lang: "en"
-  },
-  "!ggami": {
-    match: "ggami",
-    value: "!ggami ",
-    lang: "en"
-  },
-  "!까미": {
-    match: "ggami",
-    value: "!까미 ",
-    lang: "ko"
-  },
-  "!help": {
-    match: "help",
-    value: "!help ",
-    lang: "en"
-  },
-  "!command": {
-    match: "help",
-    value: "!command ",
-    lang: "en"
-  },
-  "!commands": {
-    match: "help",
-    value: "!commands ",
-    lang: "en"
-  }
-};
-module.exports.HELPER_TEXT =
-  "```diff\n" +
-  "+ !define [word] | !정의 [단어]\n" +
-  "+ !ggami | !까미\n" +
-  "```";
 module.exports.CONFUSED_COMAND = `Sorry I'm a little confused, please try again...`;
 module.exports.DICTIONARY_API_URL =
   "https://ac.dict.naver.com/koendict/ac?q_enc=utf-8&st=1000&r_format=json&r_enc=utf-8&r_lt=1000&r_unicode=0&r_escape=1&q=";
 module.exports.DICTIONARY_LINK =
   "https://endic.naver.com/search.nhn?sLn=kr&searchOption=all&query=";
-module.exports.isMention = (message, bot) =>
-  message.content.indexOf("<@" + bot.user.id) === 0 ||
-  message.content.indexOf("<@!" + bot.user.id) === 0;
-module.exports.isDM = message => message.channel && message.channel.type === "dm";
+
 module.exports.NAVER_VIDEO_LINK = `[Click here to learn how to use Naver Dictionary](https://www.youtube.com/watch?v=KcPPllmx-Rc) By TTMIK`;
 module.exports.NAVER_FIELDS = url => [
   {
